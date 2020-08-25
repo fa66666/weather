@@ -1,0 +1,28 @@
+{
+  "name": "fa\/weather",
+  "description": "A weaher SDK",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhifS",
+      "email": "13963543525@163.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.0",
+    "phpunit/phpunit": "^9.3",
+    "mockery/mockery": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fa\\Weather\\": "./src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Fa\\Weather\\ServiceProvider"
+      ]
+    }
+  }
+}
